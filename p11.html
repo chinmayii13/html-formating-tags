@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            LEARN CODE
+        </title>
+         <!-- search  syntax highlight cdn link for html -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <style>
+             *{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            .language-javascript{
+                color: rgb(110, 110, 237);
+                background-color: rgb(146, 221, 189);
+                padding: 20px;
+                margin: auto;
+                width: fit-content;
+                height: fit-content;
+                border: 10px ridge rgb(2, 29, 2);
+            }
+            .container{
+                    padding: 4%;
+                }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>Here are a few examples of basic Java code snippets, demonstrating fundamental concepts:</p>
+            <p>1. Hello World Program:</p>
+            <p>This is the classic first program, demonstrating how to print output to the console.</p>
+            <pre>
+                <code class="language-javascript">
+                    class Dog {
+    String name; // Field to store the dog's name
+    String breed; // Field to store the dog's breed
+
+    // Constructor to initialize the object
+    Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
+    // Method to display dog's information
+    void displayInfo() {
+        System.out.println("Name: " + name + ", Breed: " + breed);
+    }
+}
+
+public class MyPets {
+    public static void main(String[] args) {
+        // Create an object (instance) of the Dog class
+        Dog myDog = new Dog("Buddy", "Golden Retriever");
+
+        // Call a method on the object
+        myDog.displayInfo();
+    }
+}
+                </code>
+            </pre>
+
+        </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    </body>
+</html>
